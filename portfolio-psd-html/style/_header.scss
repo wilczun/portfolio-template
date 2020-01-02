@@ -1,14 +1,23 @@
+header {
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  min-height: 15vh;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  top: 5rem;
+  top: 0rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
+  transition: all 0.25s ease-in;
 
   .logo {
     flex: 1 1 32rem;
+    margin-top: 1rem;
 
   }
 
@@ -18,7 +27,20 @@ nav {
     ul {
       text-transform: uppercase;
       @include flex(space-evenly, center, row);
+      margin-top: 2rem;
     }
+  }
+}
+
+.bg-change {
+  background: rgba(0, 0, 0, 0.863);
+  min-height: 7rem;
+  color: white;
+  opacity: 1;
+  transition: all 0.25s ease-in;
+
+  a {
+    color: white;
   }
 }
 

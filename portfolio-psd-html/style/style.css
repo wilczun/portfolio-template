@@ -54,6 +54,13 @@ a {
   margin: auto;
 }
 
+header {
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  min-height: 15vh;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,17 +68,20 @@ nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: fixed;
-  top: 5rem;
+  top: 0rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 99;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
 }
 
 nav .logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 32rem;
           flex: 1 1 32rem;
+  margin-top: 1rem;
 }
 
 nav .navigation {
@@ -95,6 +105,20 @@ nav .navigation ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 2rem;
+}
+
+.bg-change {
+  background: rgba(0, 0, 0, 0.863);
+  min-height: 7rem;
+  color: white;
+  opacity: 1;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.bg-change a {
+  color: white;
 }
 
 .main-head {
@@ -271,10 +295,10 @@ nav .navigation ul {
 }
 
 .what-i-do-image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: url("../img/Clip.png");
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 45vh;
 }
 
 .what-i-do-box {
