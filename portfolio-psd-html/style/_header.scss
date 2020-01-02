@@ -1,0 +1,76 @@
+nav {
+  display: flex;
+  padding-top: 3rem 0rem;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+
+  .logo {
+    flex: 1 1 32rem;
+
+  }
+
+  .navigation {
+    flex: 1 1 40rem;
+
+    ul {
+      text-transform: uppercase;
+      @include flex(space-evenly, center, row);
+    }
+  }
+}
+
+.main-head {
+  position: relative;
+  overflow: hidden;
+
+  .main-border-left {
+    position: absolute;
+    top: 20%;
+    left: -25rem;
+    min-width: 45rem;
+    min-height: 50rem;
+    border: 1.7rem solid #212121;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  .main-border-right {
+    position: absolute;
+    top: 25%;
+    right: -5rem;
+    min-width: 28rem;
+    min-height: 38rem;
+    border: 1.7rem solid #fff;
+    opacity: 0.8;
+  }
+
+  h3 {
+    padding: 1.3rem;
+  }
+
+  @include flex(0, center, row);
+  flex-wrap: wrap;
+
+  .main-text {
+    flex: 1 1 40rem;
+    padding: 30rem 0;
+  }
+
+  .button-1 {
+    @include main-button($button-color-dark);
+    color: white;
+  }
+
+  .button-2 {
+    @include main-button($button-color-white)
+  }
+
+  .main-image {
+    flex: 1 1 40rem;
+    background: $background-color;
+  }
+}

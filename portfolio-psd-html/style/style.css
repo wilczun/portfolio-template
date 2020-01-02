@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 4.6rem;
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4,
+h5 {
+  font-size: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3rem 0rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  top: 5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 99;
+}
+
+nav .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 32rem;
+          flex: 1 1 32rem;
+}
+
+nav .navigation {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+nav .navigation ul {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-head {
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-head .main-border-left {
+  position: absolute;
+  top: 20%;
+  left: -25rem;
+  min-width: 45rem;
+  min-height: 50rem;
+  border: 1.7rem solid #212121;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.main-head .main-border-right {
+  position: absolute;
+  top: 25%;
+  right: -5rem;
+  min-width: 28rem;
+  min-height: 38rem;
+  border: 1.7rem solid #fff;
+  opacity: 0.8;
+}
+
+.main-head h3 {
+  padding: 1.3rem;
+}
+
+.main-head .main-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  padding: 30rem 0;
+}
+
+.main-head .button-1 {
+  background: #212121;
+  padding: 1.5rem 4.5rem;
+  border: 1px solid #212121;
+  font-weight: bold;
+  color: white;
+}
+
+.main-head .button-2 {
+  background: #fff;
+  padding: 1.5rem 4.5rem;
+  border: 1px solid #212121;
+  font-weight: bold;
+}
+
+.main-head .main-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  background: #E1E1E1;
+}
+
+.about {
+  margin-top: 8rem;
+  min-height: 40vh;
+  text-align: center;
+}
+
+.about p {
+  padding: 5rem 20rem;
+  font-weight: bold;
+}
+
+.about button {
+  background: #212121;
+  padding: 1.5rem 4.5rem;
+  border: 1px solid #212121;
+  font-weight: bold;
+  color: white;
+}
+
+.my-skills {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

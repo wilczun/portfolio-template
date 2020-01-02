@@ -1,0 +1,26 @@
+$header1: 4.6rem;
+$header2: 3.6rem;
+$header3: 2.4rem;
+$header4: 3rem;
+$text: 1.6rem;
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #E1E1E1;
+$gray-text: #2c2c2c;
+$button-color-dark: #212121;
+$button-color-white: #fff;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin main-button($color) {
+  background: $color;
+  padding: 1.5rem 4.5rem;
+  border: 1px solid #212121;
+  font-weight: bold;
+
+
+}
