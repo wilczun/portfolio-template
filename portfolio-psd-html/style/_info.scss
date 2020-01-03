@@ -1,4 +1,5 @@
 .info {
+  margin-top: 2rem;
   min-height: 40vh;
   background: url('../img/img\ border.png') no-repeat;
   background-size: cover;
@@ -14,6 +15,7 @@
 
 .text {
   padding: 1rem;
+  margin: 1rem;
   color: white;
   text-align: center;
   flex: 1 1 30rem;

@@ -1,0 +1,66 @@
+@media screen and (max-width: 886px) {
+  html {
+    font-size: 58%;
+  }
+
+  // MAIN HEAD
+  .main-head {
+    text-align: center;
+
+
+    .main-border-right {
+      display: none;
+    }
+
+    .main-text {
+      padding: 15rem 3rem;
+    }
+
+    .main-image {
+      display: none;
+    }
+  }
+
+  // ABOUT
+  .about {
+
+    p {
+      margin: 5rem;
+      padding: 0;
+    }
+
+    button {
+      margin: 1rem;
+    }
+  }
+
+  // MY SKILLS
+  .my-skills {
+    margin-top: 15rem;
+
+    .skill-bar {
+      @include flex(center, center, column)
+    }
+  }
+
+  // what i do
+
+  .what-i-do-box {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
+
+
+  .bg-change {
+    min-height: 12rem;
+  }
+
+  .what-i-do {
+    min-height: 115vh;
+  }
+}

@@ -1,19 +1,18 @@
 .what-i-do {
   text-align: center;
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .what-i-do-image {
   background-image: url('../img/Clip.png');
   background-attachment: fixed;
   background-size: cover;
-  min-height: 40vh;
-  margin-bottom: 40rem;
+  min-height: 55vh;
 }
 
 .what-i-do-box {
-  padding: 10rem;
+  padding: 2rem;
   background: #fff;
   position: absolute;
   top: 15%;
@@ -34,10 +33,6 @@
   min-height: 20rem;
   padding: 1rem;
   margin-top: 1rem;
-
-  h3 {
-    margin: 1rem;
-  }
 
   p {
     line-height: 2.5rem;

@@ -55,8 +55,6 @@ $button-color-white: #fff;
   }
 
   &::before {
-    transition: 1s ease;
-    opacity: 1;
     content: $title;
     position: absolute;
     top: 0;

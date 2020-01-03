@@ -1,6 +1,4 @@
 .my-work {
-  width: 90%;
-  margin: auto;
   min-height: 100vh;
   text-align: center;
 }
@@ -13,7 +11,7 @@
 
 button {
   @include main-button($button-color-white);
-  margin: 2rem;
+  margin: 5rem;
 
   &:hover {
     @include button-hover-white;
@@ -36,6 +34,6 @@ button {
   &:hover {
 
     @include work-hover('Project Title');
-    transform: translate(-3%, -3%);
+    transform: translate(-2%, -2%);
   }
 }
