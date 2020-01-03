@@ -6,7 +6,7 @@
 
 footer {
   color: white;
-  background: $background-color-2;
+  background: $background-color2;
   border: 1px solid black;
 
   ul {
@@ -27,5 +27,17 @@ footer {
   .fab {
     font-size: 4rem;
     color: white;
+  }
+
+  .fb {
+    @include social-hover(#3b5998)
+  }
+
+  .github {
+    @include social-hover (#333)
+  }
+
+  .twitter {
+    @include social-hover(#1da1f2)
   }
 }

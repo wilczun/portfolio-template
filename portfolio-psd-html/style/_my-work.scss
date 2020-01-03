@@ -14,11 +14,18 @@
 button {
   @include main-button($button-color-white);
   margin: 2rem;
+
+  &:hover {
+    @include button-hover-white;
+  }
 }
 
 .work {
+  position: relative;
   margin: 1rem;
   flex: 1 1 35rem;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.849);
+  transition: 1s ease;
 
   img {
     width: 100%;
@@ -26,5 +33,9 @@ button {
     object-fit: cover;
   }
 
+  &:hover {
 
+    @include work-hover('Project Title');
+    transform: translate(-3%, -3%);
+  }
 }

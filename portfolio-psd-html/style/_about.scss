@@ -12,5 +12,9 @@
   button {
     @include main-button($button-color-dark);
     color: white;
+
+    &:hover {
+      @include button-hover-dark;
+    }
   }
 }

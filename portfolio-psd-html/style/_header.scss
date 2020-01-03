@@ -2,7 +2,7 @@ header {
   width: 100vw;
   position: fixed;
   z-index: 99;
-  min-height: 15vh;
+  min-height: 7rem;
 }
 
 nav {
@@ -44,7 +44,7 @@ nav {
   min-height: 7rem;
   color: white;
   opacity: 1;
-  transition: all 1s ease-in;
+  transition: all 0.25s ease-in;
 
   a {
     color: white;
@@ -91,14 +91,25 @@ nav {
   .button-1 {
     @include main-button($button-color-dark);
     color: white;
+
+    &:hover {
+      @include button-hover-dark;
+    }
   }
 
   .button-2 {
-    @include main-button($button-color-white)
+    @include main-button($button-color-white);
+
+    &:hover {
+      @include button-hover-white;
+    }
+
+
   }
 
   .main-image {
     flex: 1 1 40rem;
     background: $background-color;
+
   }
 }
