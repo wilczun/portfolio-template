@@ -1,0 +1,30 @@
+.my-work {
+  width: 90%;
+  margin: auto;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.my-work-container {
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+button {
+  @include main-button($button-color-white);
+  margin: 2rem;
+}
+
+.work {
+  margin: 1rem;
+  flex: 1 1 35rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+}
