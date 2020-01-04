@@ -22,9 +22,14 @@ $button-color-white: #fff;
   padding: 1.5rem 4.5rem;
   border: 1px solid #212121;
   font-weight: bold;
-  box-shadow: 2px 10px 15px rgba($color: #000000, $alpha: 0.8);
+  box-shadow: 2px 4px 8px rgba($color: #000000, $alpha: 0.4);
   transition: all 0.25s ease-in;
   animation: pulsing 1.5s infinite alternate-reverse ease;
+  cursor: pointer;
+}
+
+@mixin nav-hover {
+  color: rgb(165, 162, 162);
 }
 
 @mixin button-hover-dark {
@@ -81,7 +86,7 @@ $button-color-white: #fff;
 
 @keyframes pulsing {
   from {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 
   to {

@@ -1,62 +1,72 @@
 header {
-  width: 100vw;
-  position: fixed;
-  z-index: 99;
   min-height: 7rem;
+}
+
+.main-head {
+  position: relative;
+  z-index: 2;
+  background: transparent;
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
   position: fixed;
-  top: 0rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-width: 30vh;
+  padding: 2rem 0rem;
   left: 50%;
-  transform: translateX(-50%);
-  z-index: 99;
-  transition: all 0.5s ease-in;
+  transform: translate(-50%);
+}
 
-  .logo {
-    flex: 1 1 32rem;
-    margin-top: 1rem;
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
 
-  }
-
-  .navigation {
-    flex: 1 1 40rem;
-
-    ul {
-      text-transform: uppercase;
-      @include flex(space-evenly, center, row);
-      margin-top: 2.5rem;
-
-      li a {
-        &:hover {
-          transition: all 0.25s ease-in-out;
-          color: rgb(141, 133, 135);
-        }
-      }
-    }
+  li a {
+    text-transform: uppercase;
   }
 }
 
+#logo {
+  flex: 1 1 20rem;
+}
+
+.burger,
+.menu-check {
+  display: none;
+}
+
 .bg-change {
-  background: rgba(0, 0, 0, 0.863);
-  min-height: 7rem;
+  background: rgba($color: #000000, $alpha: 0.9);
+  min-height: 2rem;
   color: white;
+  min-width: 100vw;
   opacity: 1;
-  transition: all 0.25s ease-in;
+  font-weight: bold;
+  transition: min-width background 1.2s ease-in;
+  padding: 2rem;
 
   a {
     color: white;
   }
 }
 
-.main-head {
+.nav-transition {
+  transition: all 1.2s ease-in;
+}
+
+.burger-white {
+  background: white !important;
+}
+
+.main-hero {
   @include flex(0, center, row);
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
 
   .main-border-left {
     position: absolute;

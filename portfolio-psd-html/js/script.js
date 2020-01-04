@@ -1,8 +1,17 @@
 $(window).scroll(function () {
   if ($(this).scrollTop() > 50) {
     $('#dynamic').addClass('bg-change');
+    $('#dynamic').addClass('nav-transition');
+    $('#lineWhite1').addClass('burger-white')
+    $('#lineWhite2').addClass('burger-white')
+    $('#lineWhite3').addClass('burger-white')
+
   } else {
     $('#dynamic').removeClass('bg-change');
+    $('#dynamic').addClass('nav-transition');
+    $('#lineWhite1').removeClass('burger-white')
+    $('#lineWhite2').removeClass('burger-white')
+    $('#lineWhite3').removeClass('burger-white')
   }
 });
 
