@@ -4,7 +4,7 @@ $header3: 2.4rem;
 $header4: 3rem;
 $text: 1.6rem;
 $gradient: linear-gradient(left, #38d39f, #38a4d3);
-$background-color: #E1E1E1;
+$background-color: #e1e1e1;
 $background-color2: #212121;
 $gray-text: #2c2c2c;
 $button-color-dark: #212121;
@@ -42,14 +42,12 @@ $button-color-white: #fff;
   transition: all 0.25s ease-in;
   background: #212121;
   color: white;
-
 }
 
 @mixin work-hover($title) {
-
   &::after {
     transition: 1s ease;
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -74,7 +72,6 @@ $button-color-white: #fff;
   }
 }
 
-
 @mixin social-hover($color) {
   &:hover {
     transform: scale(1.05);
@@ -82,7 +79,17 @@ $button-color-white: #fff;
   }
 }
 
-// Animations 
+// Animations
+
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 @keyframes pulsing {
   from {

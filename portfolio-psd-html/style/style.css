@@ -1,3 +1,21 @@
+@-webkit-keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes pulsing {
   from {
     -webkit-transform: scale(1.02);
@@ -252,7 +270,7 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  background: #E1E1E1;
+  background: #e1e1e1;
   position: relative;
   height: 100%;
   width: 100%;
@@ -478,6 +496,7 @@ button:hover {
 }
 
 .work {
+  min-height: 28rem;
   margin: 1rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 35rem;
@@ -503,7 +522,7 @@ button:hover {
 .work:hover::after {
   -webkit-transition: 1s ease;
   transition: 1s ease;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -537,6 +556,36 @@ button:hover {
   font-size: 3.5rem;
   color: white;
   background: transparent;
+}
+
+.work-1 {
+  background-image: url("../img/img 1.png");
+  background-size: cover;
+}
+
+.work-2 {
+  background-image: url("../img/img 2.png");
+  background-size: cover;
+}
+
+.work-3 {
+  background-image: url("../img/img 3.png");
+  background-size: cover;
+}
+
+.work-4 {
+  background-image: url("../img/img 4.png");
+  background-size: cover;
+}
+
+.work-5 {
+  background-image: url("../img/img 5.png");
+  background-size: cover;
+}
+
+.work-6 {
+  background-image: url("../img/img 6.png");
+  background-size: cover;
 }
 
 .info {
@@ -786,7 +835,7 @@ footer .twitter:hover {
     font-weight: bold;
   }
   .nav-links {
-    background: rgba(0, 0, 0, 0.9);
+    background: black;
     position: fixed;
     width: 100%;
     min-height: 100vh;

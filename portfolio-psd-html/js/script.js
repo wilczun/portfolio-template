@@ -29,3 +29,17 @@ links.forEach(link => {
     burger.classList.toggle("toggle")
   });
 });
+
+const images = document.querySelectorAll('.fade-in');
+
+observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.style.animation = `fade-in-animation 2s forwards ease-out`;
+    }
+  })
+})
+
+images.forEach(image => {
+  observer.observe(image)
+})
